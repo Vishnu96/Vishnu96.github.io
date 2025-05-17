@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/About">About</a></li>
-	        		<li><a href="/Projects">Projects</a></li>
-	        		<li><a href="/Blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:vishnu.venkatesh1996@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/Vishnu96">github.com/Vishnu96</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about/">About</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Research</a>
+				<div class="dropdown-content">
+					<a href="/projects/">Projects</a>
+					<a href="/publications/">Publications</a>
+				</div>
+			</li>
+			<li><a href="/cv/">CV</a></li>
+			<li><a href="/contact/">Contact</a></li>
+		</ul>
+	</nav>
+
+    <div class="container">
+        {{ content }}
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Vishnu Venkatesh</p>
+        <ul>
+            <li><a href="mailto:vishnu.venkatesh1996@gmail.com">email</a></li>
+            <li><a href="https://github.com/Vishnu96">github.com/Vishnu96</a></li>
+        </ul>
+    </footer>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
