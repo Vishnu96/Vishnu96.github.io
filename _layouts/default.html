@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/About">About</a></li>
-	        		<li><a href="/Projects">Projects</a></li>
-	        		<li><a href="/Blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:vishnu.venkatesh1996@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/Vishnu96">github.com/Vishnu96</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    {% include header.html %}
+    {% include navigation.html %}
+    
+    <main class="container">
+        {{ content }}
+    </main>
+    
+    {% include footer.html %}
+    
+    <script src="{{ '/assets/js/menu.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>
+</body>
+</html>
