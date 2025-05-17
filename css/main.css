@@ -156,3 +156,83 @@ footer {
 .download-link a:hover {
     background-color: #2c3e50;
 }
+
+/* Tab Container */
+.tab-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Tabs Navigation */
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab-button:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-color: #34495e;
+  transition: width 0.3s ease;
+}
+
+.tab-button:hover:after {
+  width: 100%;
+}
+
+.tab-button.active {
+  color: #34495e;
+  font-weight: bold;
+}
+
+.tab-button.active:after {
+  width: 100%;
+}
+
+/* Tab Content */
+.content-section {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.content-section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive tabs */
+@media (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

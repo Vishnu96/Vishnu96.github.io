@@ -3,17 +3,57 @@ layout: default
 title: Home
 ---
 
-<header>
-    <h1>Vishnu Venkatesh</h1>
-    <p>Robotics Researcher</p>
-</header>
-
-<main>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is the personal website of Vishnu Venkatesh.</p>
-        <p>It is currently a work in progress.</p>
-        <p>This website will serve as a marker of my web development skills.</p>
-        <p>Its look and functionality will improve as my skills improve.</p>
-    </section>
-</main>
+<div class="tab-container">
+  <div class="tabs">
+    <button class="tab-button active" data-tab="about">About</button>
+    <button class="tab-button" data-tab="research">Research</button>
+    <button class="tab-button" data-tab="projects">Projects</button>
+    <button class="tab-button" data-tab="publications">Publications</button>
+    <button class="tab-button" data-tab="cv">CV</button>
+    <button class="tab-button" data-tab="contact">Contact</button>
+  </div>
+  
+  <div class="tab-content">
+    <!-- About Section -->
+    <div id="about" class="content-section active">
+      <h2>About Me</h2>
+      <p>This is the personal website of Vishnu Venkatesh.</p>
+      <p>I am a Robotics Researcher specializing in [your specialties].</p>
+      <!-- Add more about content here -->
+    </div>
+    
+    <!-- Research Section -->
+    <div id="research" class="content-section">
+      <h2>Research</h2>
+      <p>My research focuses on [your research areas].</p>
+      <!-- Add more research content here -->
+    </div>
+    
+    <!-- Projects Section -->
+    <div id="projects" class="content-section">
+      <h2>Projects</h2>
+      <p>Here are some of my notable projects:</p>
+      <!-- Project list here -->
+    </div>
+    
+    <!-- Publications Section -->
+    <div id="publications" class="content-section">
+      <h2>Publications</h2>
+      <p>My academic publications:</p>
+      <!-- Publications list here -->
+    </div>
+    
+    <!-- CV Section -->
+    <div id="cv" class="content-section">
+      <h2>Curriculum Vitae</h2>
+      <!-- CV content here -->
+    </div>
+    
+    <!-- Contact Section -->
+    <div id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>You can reach me at: [your contact information]</p>
+      <!-- Contact information here -->
+    </div>
+  </div>
+</div>
