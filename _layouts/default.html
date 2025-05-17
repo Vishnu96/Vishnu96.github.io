@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <style>
-        /* Your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-        nav li {
-            display: inline;
-        }
-        section {
-            margin: 30px 0;
-        }
-    </style>
-</head>
-<body>
-    {{ content }}
-</body>
-</html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/About">About</a></li>
+	        		<li><a href="/Projects">Projects</a></li>
+	        		<li><a href="/Blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:vishnu.venkatesh1996@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/Vishnu96">github.com/Vishnu96</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>

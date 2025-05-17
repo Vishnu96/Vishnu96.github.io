@@ -1,4 +1,2 @@
-title: Vishnu Venkatesh
-description: Personal website and portfolio
-baseurl: ""
-url: "https://vishnu96.github.io"
+name: Vishnu Venkatesh
+markdown: kramdown
