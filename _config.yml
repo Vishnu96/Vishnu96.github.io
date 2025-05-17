@@ -1,12 +1,4 @@
 title: Vishnu Venkatesh
-email: vishnu.venkatesh1296@gmail.com
-description: Personal website for Vishnu Venkatesh
+description: Personal website and portfolio
 baseurl: ""
 url: "https://vishnu96.github.io"
-github_username: Vishnu96
-
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
