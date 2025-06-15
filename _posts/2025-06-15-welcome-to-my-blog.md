@@ -6,11 +6,11 @@ author: Vishnu Venkatesh
 excerpt: "Weekly recaps of what i've been up to..."
 ---
 
-Welcome to my blog! I plan to use this space to recap ay activities on a weekly basis.
+Welcome to my blog! I plan to use this space to recap my activities on a weekly basis.
 
 ## What You Can Expect
 
-Ill be doing weekly recaps of:
+I'll be doing weekly recaps of:
 
 - What I'm working on.
 - What I've learnt.
