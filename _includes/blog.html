@@ -1,0 +1,26 @@
+<div class="blog-content">
+    <h2>Blog</h2>
+    
+    <div class="intro-section">
+        <p>Welcome to my blog where I share insights about robotics, research, and technology.</p>
+    </div>
+    
+    <div class="blog-posts">
+        {% for post in site.posts limit:5 %}
+        <article class="blog-post">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+            <a href="{{ post.url }}" class="read-more">Read more →</a>
+        </article>
+        {% endfor %}
+        
+        {% if site.posts.size == 0 %}
+        <p class="no-posts">No blog posts yet. Check back soon!</p>
+        {% endif %}
+    </div>
+    
+    <div class="blog-archive">
+        <a href="/blog/" class="view-all-posts">View All Posts →</a>
+    </div>
+</div>

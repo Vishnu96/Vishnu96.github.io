@@ -8,32 +8,29 @@ title: Home
     <button class="tab-button active" data-tab="about">About</button>
     <button class="tab-button" data-tab="research">Research</button>
     <button class="tab-button" data-tab="projects">Projects</button>
+    <button class="tab-button" data-tab="blog">Blog</button>
   </div>
   
   <div class="tab-content">
     <!-- About Section -->
     <div id="about" class="content-section active">
       {% include about.html %}
-      <!-- <h2>About Me</h2>
-      <p>This is the personal website of Vishnu Venkatesh.</p>
-      <p>I am a Robotics Researcher specializing in [your specialties].</p> -->
-      <!-- Add more about content here -->
     </div>
     
     <!-- Research Section -->
     <div id="research" class="content-section">
       {% include research.html %}
-      <!-- <h2>Research</h2>
-      <p>My research focuses on [your research areas].</p> -->
-      <!-- Add more research content here -->
+
     </div>
     
     <!-- Projects Section -->
     <div id="projects" class="content-section">
       {% include projects.html %}
-      <!-- <h2>Projects</h2>
-      <p>Here are some of my notable projects:</p> -->
-      <!-- Project list here -->
+    </div>
+
+    <!-- Blog Section -->
+    <div id="blog" class="content-section">
+      {% include blog.html %}
     </div>
   </div>
 </div>

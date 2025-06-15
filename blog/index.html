@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog-archive-page">
+    <header>
+        <h1>Blog Archive</h1>
+        <p>All posts from my robotics and research journey</p>
+    </header>
+    
+    <div class="posts-list">
+        {% for post in site.posts %}
+        <article class="blog-post-summary">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+            <a href="{{ post.url }}" class="read-more">Read full post →</a>
+        </article>
+        {% endfor %}
+    </div>
+    
+    <a href="/" class="back-home">← Back to Home</a>
+</div>
